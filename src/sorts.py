@@ -41,27 +41,31 @@ def counting_sort(a: list[int]) -> list[int]:
 
 
 
-<<<<<<< HEAD
-def radix_sort(a: list[int], base: int = 10) -> list[int]:
-=======
 def radix_sort(a: list[int], base: int=10) -> list[int]:
+    m_v = max(a)
+    dg = 1
+    
+    while m_v // dg > 0:
+        m = [[] for _ in range(base)]
+        for i in a:
+            idx = (i // dg) % base
+            m[idx].append(i)
+        a = []
+        for bucket in m:
+            a.extend(bucket)
+        dg *= base
+    
     return a
+
 
 
 def bucket_sort(a: list[float], buckets: int | None = None) -> list[float]:
->>>>>>> a994b5139de651ab6fa5e5141fef5a8ba14f325a
     return a
 
 
 
 
-<<<<<<< HEAD
-=======
-
-
 def heap_sort(a: list[int]) -> list[int]:
->>>>>>> a994b5139de651ab6fa5e5141fef5a8ba14f325a
-    
     n = len(a)
     for i in range(n // 2 - 1, -1, -1):
         heap(a, n, i)
