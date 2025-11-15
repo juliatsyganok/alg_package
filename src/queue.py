@@ -1,4 +1,7 @@
 class Queue:
+    """
+    Queue на list
+    """
     def __init__(self):
         """
         Создание списка для хранения

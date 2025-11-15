@@ -1,4 +1,7 @@
 def factorial(n: int) -> int:
+    """
+    Получение факториала числа циклом
+    """
     if n < 0:
         raise ValueError("Неверное число")
     cnt = 1
@@ -9,6 +12,9 @@ def factorial(n: int) -> int:
 
 
 def factorial_recursive(n: int) -> int:
+    """
+    Получение факторила числа рекурсивно
+    """
     if n < 0:
         raise ValueError("Неверное число")
     if n == 0:
@@ -18,6 +24,9 @@ def factorial_recursive(n: int) -> int:
 
 
 def fibo(n: int) -> int:
+    """
+    Получение числа Фибоначи по номеру циклом
+    """
     if n < 0:
         raise ValueError("Неверное число")
     if n == 0:
@@ -32,6 +41,9 @@ def fibo(n: int) -> int:
 
 
 def fibo_recursive(n: int) -> int:
+    """
+    Получение числа Фибоначи по номеру рекурсивно
+    """
     if cash is None:
         cash = {}
 

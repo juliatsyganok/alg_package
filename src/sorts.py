@@ -1,4 +1,8 @@
 def bubble_sort(a: list[int]) -> list[int]:
+    """
+    Пузырьковая сортировка
+    Лучший: O(n), Средний: O(n²), Худший: O(n²)
+    """
     for i in range(len(a) - 1):
         for j in range(len(a) - 1 - i):
             if a[j] > a[j+1]:
@@ -8,6 +12,10 @@ def bubble_sort(a: list[int]) -> list[int]:
 
 
 def quick_sort(a: list[int]) -> list[int]:
+    """
+    Быстрая сортировка
+    Лучший: O(n log n), Средний: O(n log n), Худший: O(n²)
+    """
     if len(a) <= 1:
         return a
     else:
@@ -27,6 +35,10 @@ def quick_sort(a: list[int]) -> list[int]:
 
 
 def counting_sort(a: list[int]) -> list[int]:
+    """
+    Сортировка подсчётом
+    Всегда O(n + k), где k - диапазон
+    """
     m = [0] * (len(set(a)) + 1)
     for i in range(len(a)):
         m[a[i]] += 1
@@ -42,6 +54,10 @@ def counting_sort(a: list[int]) -> list[int]:
 
 
 def radix_sort(a: list[int], base: int=10) -> list[int]:
+    """
+    Поразрядная сортировка
+    Всегда O(n * k)
+    """
     m_v = max(a)
     dg = 1
     
@@ -60,12 +76,20 @@ def radix_sort(a: list[int], base: int=10) -> list[int]:
 
 
 def bucket_sort(a: list[float], buckets: int | None = None) -> list[float]:
+    """
+    Сортировка по категориям
+    Лучший: O(n + k), Средний: O(n + k), Худший: O(n²)
+    """
     return a
 
 
 
 
 def heap_sort(a: list[int]) -> list[int]:
+    """
+    Пирамидальная сортировка
+    Всегда O(n log n)
+    """
     n = len(a)
     for i in range(n // 2 - 1, -1, -1):
         heap(a, n, i)
@@ -76,6 +100,9 @@ def heap_sort(a: list[int]) -> list[int]:
     return a
 
 def heap(a, n, i):
+    """
+    Для построения дерева
+    """
     lg = i 
     left = 2 * i + 1 
     right = 2 * i + 2 
