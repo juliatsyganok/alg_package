@@ -45,6 +45,12 @@ def radix_sort(a: list[int], base: int=10) -> list[int]:
     return a
 
 
+def bucket_sort(a: list[float], buckets: int | None = None) -> list[float]:
+    return a
+
+
+
+
 
 
 def heap_sort(a: list[int]) -> list[int]:
