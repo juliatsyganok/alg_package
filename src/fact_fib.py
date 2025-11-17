@@ -42,19 +42,13 @@ def fibo(n: int) -> int:
 
 def fibo_recursive(n: int) -> int:
     """
-    Получение числа Фибоначи по номеру рекурсивно
+    Получение числа Фибоначчи по номеру рекурсивно
     """
-    if cash is None:
-        cash = {}
-
     if n < 0:
         raise ValueError("Неверное число")
-    if n in cash:
-        return cash[n]
     if n == 0:
         return 0
     if n == 1:
         return 1
-    cash[n] = fibo_recursive(n - 1, cash) + fibo_recursive(n - 2, cash)
-    return cash[n]
+    return fibo_recursive(n - 1) + fibo_recursive(n - 2)
 

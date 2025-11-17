@@ -39,16 +39,21 @@ def counting_sort(a: list[int]) -> list[int]:
     Сортировка подсчётом
     Всегда O(n + k), где k - диапазон
     """
-    m = [0] * (len(set(a)) + 1)
-    for i in range(len(a)):
-        m[a[i]] += 1
-        a[i] = 0
+    mi = min(a)
+    ma = max(a)
+    
+    len_m = ma - mi + 1
+    count = [0] * len_m
+    
+    for i in a:
+        count[i - mi] += 1
+    
     k = 0
-    for i in range(len(m)):
-        while m[i] != 0:
-            a[k] = i
+    for i in range(len_m):
+        for j in range(count[i]):
+            a[k] = i + mi
             k += 1
-            m[i] -= 1
+    
     return a
 
 
