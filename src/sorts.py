@@ -85,6 +85,21 @@ def bucket_sort(a: list[float], buckets: int | None = None) -> list[float]:
     Сортировка по категориям
     Лучший: O(n + k), Средний: O(n + k), Худший: O(n²)
     """
+    n = len(a)
+    if n <= 1:
+        return a
+    buckets = [[] for _ in range(10)]
+    for num in a:
+        bucket_index = int(num * 10)
+        if bucket_index == 10:
+            bucket_index = 9
+        buckets[bucket_index].append(num)
+    result = []
+    for bucket in buckets:
+        if len(bucket) > 1:
+            result.extend(bucket_sort(bucket))
+        else:
+            result.extend(bucket)
     return a
 
 
