@@ -67,7 +67,7 @@ def radix_sort(a: list[int], base: int=10) -> list[int]:
     dg = 1
     
     while m_v // dg > 0:
-        m = [[] for _ in range(base)]
+        m = [[] for i in range(base)]
         for i in a:
             idx = (i // dg) % base
             m[idx].append(i)
