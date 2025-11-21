@@ -51,7 +51,7 @@ def main():
             stack = Stack()
             while True:
                 print(f"Стек: {stack.items}")
-                print("push/peek/pop/is_empty_min_len")
+                print("push/peek/pop/is_empty/min/len/exit")
                 cmd = input()
                 
                 if cmd.startswith("push"):
@@ -85,7 +85,7 @@ def main():
             queue = Queue()
             while True:
                 print(f"Очередь: {queue.items}")
-                print("")
+                print("enqueue/dequeue/front/is_empty/len/exit")
                 cmd = input()
                 
                 if cmd.startswith("enqueue"):
@@ -103,7 +103,7 @@ def main():
                         print(e)
                 elif cmd == "is_empty":
                     print(f"Пустая: {queue.is_empty()}")
-                elif cmd == "size":
+                elif cmd == "len":
                     print(f"Размер: {queue.size()}")
                 elif cmd == "exit":
                     break
