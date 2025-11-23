@@ -62,3 +62,6 @@
 - `timeit_once(func, args, kwargs) -> float` - измерение времени выполнения одной функции
 - `benchmark_sorts(arrays: dict[str, list], algos: dict[str, callable]) -> dict[str, dict[str, float]]` - сравнительный анализ алгоритмов сортировки
 
+LEETCODE: (скрины выполненных задач)
+<img width="2156" height="1337" alt="image" src="https://github.com/user-attachments/assets/313447b0-02d5-49bb-8bd9-79729e78503a" />
+
