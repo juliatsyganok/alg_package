@@ -63,5 +63,33 @@
 - `benchmark_sorts(arrays: dict[str, list], algos: dict[str, callable]) -> dict[str, dict[str, float]]` - сравнительный анализ алгоритмов сортировки
 
 LEETCODE: (скрины выполненных задач)
+1) LeetCode 509 Fibonacci Number
 <img width="2156" height="1337" alt="image" src="https://github.com/user-attachments/assets/313447b0-02d5-49bb-8bd9-79729e78503a" />
+
+2) LeetCode 70 Climbing Stair
+<img width="2427" height="1340" alt="image" src="https://github.com/user-attachments/assets/f235f3c5-3405-424c-833d-89d57cbfde34" />
+
+3)LeetCode 75 Sort Colors
+<img width="2567" height="1340" alt="image" src="https://github.com/user-attachments/assets/7e585700-3628-4e29-909b-a02feccd97e0" />
+
+4)Hackerrank CountingSort 1
+<img width="1622" height="904" alt="image" src="https://github.com/user-attachments/assets/34b54e27-f956-4426-989f-2fee36055018" />
+
+5)Hackerrank CountingSort 2
+<img width="1584" height="917" alt="image" src="https://github.com/user-attachments/assets/8850912f-994a-4011-9c22-12d8fcca46d2" />
+
+6)Hackerrank CountingSort 3
+
+7)Hackerrank QuickSort 1
+
+8)Top K Frequent Elements
+
+9)K-th Largest Element in Array
+
+10)LeetCode 20 Valid Parentheses
+
+11)LeetCode 225 Implement Stack using Queues
+
+12)LeetCode 232 Implement Queue using Stacks
+
 
