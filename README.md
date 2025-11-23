@@ -80,16 +80,17 @@ LEETCODE: (скрины выполненных задач)
 
 6)Hackerrank CountingSort 3
 
-7)Hackerrank QuickSort 1
-
 8)Top K Frequent Elements
+<img width="2519" height="1353" alt="image" src="https://github.com/user-attachments/assets/f16e9cdb-e912-45d5-bb2c-2416a23ca5b5" />
 
 9)K-th Largest Element in Array
+<img width="2585" height="1247" alt="image" src="https://github.com/user-attachments/assets/8f3aadf2-bd5a-469a-96d8-829214f4709a" />
 
 10)LeetCode 20 Valid Parentheses
+<img width="2532" height="1355" alt="image" src="https://github.com/user-attachments/assets/eee50cbc-0ce6-42a1-8268-67e71a7f7070" />
 
 11)LeetCode 225 Implement Stack using Queues
+<img width="2503" height="1322" alt="image" src="https://github.com/user-attachments/assets/da9668f0-6f01-4048-b3ad-005c896555d9" />
 
-12)LeetCode 232 Implement Queue using Stacks
 
 
